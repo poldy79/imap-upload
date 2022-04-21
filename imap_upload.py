@@ -262,9 +262,9 @@ class Progress():
                 gmail_sent_str = r"Sent"
                 gmail_draft_str = "Draft"
                 gmail_important_str = u'Important'
-                gmail_open_str = u'Open'
+                gmail_open_str = u'Opened'
                 gmail_unseen_str = u"Unread"
-                gmail_category_str = r"^Category_"
+                gmail_category_str = r"^Category\ "
                 gmail_imap_str = r'^IMAP_'
                 gmail_trash_str = "Trash"
             elif (self.google_takeout_language == "es"):
@@ -294,7 +294,7 @@ class Progress():
                 gmail_important_str = u'Wichtig'
                 gmail_open_str = u'Geöffnet'
                 gmail_unseen_str = u"Ungelesen"
-                gmail_category_str = r"^Kategorie_"
+                gmail_category_str = r"^Kategorie\ "
                 gmail_imap_str = r'^IMAP_'
                 gmail_trash_str = "Papierkorb"
             label = decode_header_to_string(msg["x-gmail-labels"] or "")
